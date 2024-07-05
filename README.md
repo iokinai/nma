@@ -31,9 +31,9 @@ b* !-> bb\
 \* -> \
  -> * 
 
-If we realize commands by creating structs it will look like:
+If we implement commands by creating structs it will look like:
 
-vec![Command::new("\*a", "a\*", false), Command::new("\*b", "b\*", false), Command::new("a*", "aa", true), Command::new("b*", "bb", true), Command::new("\*", "", true), Command::new("", "*", false)]
+***vec![Command::new("\*a", "a\*", false), Command::new("\*b", "b\*", false), Command::new("a*", "aa", true), Command::new("b*", "bb", true), Command::new("\*", "", true), Command::new("", "*", false)]***
 
 Not really convenient, isn't it? Thats why ***nma_command*** exists!
 
