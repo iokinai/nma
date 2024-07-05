@@ -1,0 +1,2 @@
+[workspace]
+members = [ "codegen/nma_command", "examples/duplicate_last_letter","nma", "nma_models"]

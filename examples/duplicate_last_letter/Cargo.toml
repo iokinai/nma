@@ -1,0 +1,9 @@
+[package]
+name = "duplicate_last_letter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nma = { path = "../../nma"}
+nma_command = { path = "../../codegen/nma_command" }
+nma_models = { path = "../../nma_models"}

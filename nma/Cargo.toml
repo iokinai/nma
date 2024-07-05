@@ -1,0 +1,8 @@
+[package]
+name = "nma"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nma_models = { path = "../nma_models" }
+nma_command = { path = "../codegen/nma_command" }
