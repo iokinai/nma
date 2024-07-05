@@ -7,12 +7,12 @@ In theoretical computer science, a Markov algorithm is a string rewriting system
 
 ### Project structure
 
-#### nma: 
+#### nma 
 Main library project which contains function ***run*** - main function used to execute the Markov algorithm on a given word. It takes 2 arguments: ***original_word: &String*** and ***commands: &Vec<Command>***
 * ***original_word: &String***: the word to modificate with algorithm
 * ***commands: &Vec<Command>***: the vector of commands that modificate the word. Commands must be applied in the correct order
 
-### nma_models
+#### nma_models
 Library that contains models, the main of which is ***Command***
 It ha 3 fields:
 * ***pub find: String***: the word to find
@@ -37,6 +37,8 @@ vec![Command::new("\*a", "a\*", false), Command::new("\*b", "b\*", false), Comma
 
 Not really convenient, isn't it? Thats why ***nma_command*** exists!
 
+#### nma_command
+
 It implements the macro ***command!***. Inside it you should write the command in default MA syntax: 
 * ***str*** for words to find and to change, for example: ***"\*a"***
 * => to indicate which word to change from which to which
@@ -46,7 +48,7 @@ It implements the macro ***command!***. Inside it you should write the command i
 For example, ***command!("aa" => "bb")*** is equivalent to ***Command::new("aa", "bb", false)*** and ***command!("aa" !=> "bb")*** is equivalent to ***Command::new("aa", "bb", true)***
 
 
-### Exaples
+### Examples
 
 For example, here is the program that duplicates last letter:
 
